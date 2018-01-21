@@ -12,18 +12,15 @@
 	<body>
 
 <body>
-
-	<h1>Oops...!</h1>
-		<br>
-		<div class="alert alert-danger">
-  				<strong>ERROR WAS OCCURRED!</strong> 
-  				<%
-					String errorMsg = (String)request.getAttribute("ERROR");
-					out.println("<h3>" + errorMsg + "</h3>");
-					out.println("Please contact with our Help Desk");
-				%>
-				
-		</div>
-
+	<br>
+	<div class="alert alert-danger">
+  			<strong>ERROR</strong> 
+  			<%
+  			//throws an error
+				String errorMsg = (String)request.getAttribute("ERROR");
+				out.println("<h3>" + errorMsg + "</h3>");
+			%>
+			
+	</div>
 </body>
 </html>

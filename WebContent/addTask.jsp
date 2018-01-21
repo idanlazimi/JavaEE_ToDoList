@@ -23,12 +23,12 @@
 				<br>
 				<label>Description <input type="text" class="form-control" name="taskBody"/></label>
 				<br>
-				<label>Status of the task <input type="text" class="form-control" name="status"/></label>
+				<label>Status <input type="text" class="form-control" name="status"/></label>
 				<br>
 				<br>
 				
 				<div class="input-group">
-				<button type="submit" name="insert" class="btn btn-primary">Apply</button> 
+				<button type="submit" name="insert" class="btn btn-primary">Go</button> 
 				</div>
 			</form>
 			

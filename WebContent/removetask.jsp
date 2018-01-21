@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Remove your Task</title>
+		<title>Delete task</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../css/ourcss.css">
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 	<body>
 	
 		<div class="container">
-			<h1 class="text-center">Remove Task</h1>
+			<h1 class="text-center">Delete Task</h1>
 			<a href="tasklist"><span class="glyphicon glyphicon-menu-left"></span></a>
 			<br><br>
 			<%
@@ -42,7 +42,7 @@
 				<br><br>
 				
 				<div class="input-group">
-				<button type="submit" name="delete" class="btn btn-primary">Apply</button>
+				<button type="submit" name="delete" class="btn btn-primary">Go</button>
 				</div>
 	
 			</form>

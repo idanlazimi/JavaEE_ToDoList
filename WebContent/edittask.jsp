@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Edit your Tasks</title>
+		<title>Modify Tasks</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../css/ourcss.css">
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -14,15 +14,19 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1 class="text-center">Edit Task</h1>
+			<h1 class="text-center">Modify Task</h1>
 			<br>
 			<a href="tasklist"><span class="glyphicon glyphicon-menu-left"></span></a>
 			<br><br>
+			
+			<!-- edit task and keep database integrity -->
 			<%
 				HashMap<Integer, Integer> idHash = new HashMap();
+				//get the list of tasks
 				List <Task> tasks = (List<Task>)request.getAttribute("tasks");
 				out.println("<table class='table table-striped table-hover'>");
 				out.println("<thead><tr><th>Task ID</th><th>Task title</th><th>Task description</th><th>Staus of the task</th></tr></thead>");
+				//iterate over the list
 				for(int i=0; i<tasks.size(); i++) {
 					
 					int colNum = i+1;
@@ -33,6 +37,7 @@
 							tasks.get(i).getStatus() + "</td></tr>");
 				}
 				
+				//inject information onto the web page
 				session.setAttribute("HASH", idHash);
 				out.println("</table>"); 
 			%>
@@ -47,7 +52,7 @@
 				<br>
 				<label>Description  <input type="text" class="form-control" name="taskbody"/></label>
 				<br>
-				<label>Status of the task <input type="text" class="form-control" name="status"/></label>
+				<label>Status<input type="text" class="form-control" name="status"/></label>
 				<br><br>
 				<div class="input-group">
 				<button type="submit" name="edit" class="btn btn-primary">Apply</button>
@@ -61,7 +66,7 @@
 					
 				%>
 					<div class="alert alert-danger">
-	  					<strong>ERROR!</strong>
+	  					<strong>BAD VALUE ERROR</strong>
 	  				<%	
 						out.println(" " + result);	
 						}

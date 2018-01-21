@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
-<title>Thank U !</title>
+<title>Cheers</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../css/ourcss.css">
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -15,14 +15,16 @@
 </head>
 <body>
 
-<a href="menu">Main Menu <span class="glyphicon glyphicon-home"></span></a>
+<a href="menu">ToDoList<span class="glyphicon glyphicon-home"></span></a>
 
 <div class="alert alert-info">
-  	<strong>you have insert this information:</strong> 
+  	<strong>Info:</strong> 
 	<br>
+	<!-- DISPLAY USER IFORMATION ABOUT THE ACTION HE PERFORMED -->
 	Name: <jsp:getProperty property="name" name="con"/><br>
-	Email Address: <jsp:getProperty property="email" name="con"/><br>
-	Your Comment: <jsp:getProperty property="comment" name="con"/><br>
+	E-mail: <jsp:getProperty property="email" name="con"/><br>
+	Feedback: <jsp:getProperty property="comment" name="con"/><br>
+	
 </div>
 
 </body>

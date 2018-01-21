@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Main Menu</title>
+		<title>ToDoList</title>
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,16 +13,16 @@
 		<style>
 		</style>
 	</head>
-	<body background-image: url(../images/menupage.jpg); >
-	
+	<body>
 			<div class="container-fluid">
 		
 			<%
 				Cookie[] menuCookie = request.getCookies();	
 				User user = (User)session.getAttribute("user");
 				String fname = user.getFirstname();
-				out.write("<h1 class='text-center'> Welcome  " + fname + " !</h1>");
-				request.setAttribute("firstname", fname);
+				out.write("<h1 class='text-center'> Homepage</h1>");
+				//out.write("<h1 class='text-center'> Greetings  " + fname + " ! Good to have you here..</h1>");
+				//request.setAttribute("firstname", fname);
 			%>
 			
 			<br>
@@ -30,29 +30,31 @@
 			
 			<ul class="nav nav-pills dropdown">
 			  <li role="presentation" class="active">
-			  	<a href="menu">Menu <span class="glyphicon glyphicon-menu-hamburger"></span></a>
+			  	<a href="menu">Homepage </span></a>
 			  </li>
 			  
 			  <li class="dropdown">
-			  	<a class="dropdown-toggle" data-toggle = "dropdown" href="taskslist">Task list
+			  	<a class="dropdown-toggle" data-toggle = "dropdown" href="taskslist">Tasks
 			  		 <span class="caret"></span>
 			  	</a>
+			  	
 			  	<ul class="dropdown-menu">
-			  		<li><a href="taskslist">View your task list</a></li>
-        	    	<li><a href="addTask">Add new task</a></li>
-            		<li><a href="removetask">Remove task</a></li>
-            		<li><a href="edittask">Edit task</a></li> 
+			  		<li><a href="taskslist">Your Tasks</a></li>
+        	    	<li><a href="addTask">Add Task</a></li>
+            		<li><a href="removetask">Delete task</a></li>
+            		<li><a href="edittask">Modify task</a></li> 
         	 	</ul>
+        	 	
 			  </li>
 
 			  <li role="presentation">
-			  	<a href="about">About <span class="glyphicon glyphicon-comment"></span></a>
+			  	<a href="about">Who Developed This? </a>
 			  </li>
 			  <li role="presentation">
-			  	<a href="logout">Logout <span class="glyphicon glyphicon-log-out"></span></a>
+			  	<a href="logout">Sign Out</a>
 			  </li>
   			  <li role="presentation">
-			  	<a href="ContactUS">Contact US <span class="glyphicon glyphicon-envelope"></span></a>
+			  	<a href="ContactUS">Feedback</a>
 			  </li>
 			  
 			</ul>
@@ -63,15 +65,15 @@
 			<%	
 				String mail = user.getMail();
 				String lanme = user.getLastname();
-				out.write("<h4 class='text-center'> Full name: " + fname +" " + lanme + " </h4>");
-				out.write("<h4 class='text-center'> Your mail: " + mail + " </h4>");
+				out.write("<h4 class='text-center'> " + fname +" " + lanme + " </h4>");
+				out.write("<h4 class='text-center'> " + mail + " </h4>");
 				request.setAttribute("firstname", fname);
 			%>
 								
 			</div>
 			
 		</div>
-							<img >
+		<img >
 	
 	</body>
 </html>

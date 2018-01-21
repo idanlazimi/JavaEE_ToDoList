@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Thank you!!</title>
+		<title>Cheers Mate</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../css/ourcss.css">
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -14,9 +14,9 @@
 
 <body>
 
-	<h1>Thank you!</h1>
+	<h1>Cheers Mate</h1>
 	<br>
-		<a href="login">Go Back to Login Page <span class="glyphicon glyphicon-home"></span></a>
+		<a href="login">Back <span class="glyphicon glyphicon-home"></span></a>
 		<br><br>
 		<div class="container">
 			<%

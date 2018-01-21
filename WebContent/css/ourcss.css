@@ -1,18 +1,13 @@
-img {
-	
-	background-image: url(../images/menupage.jpg) !important;  
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-	width: 800px;
-	height: 600px;
-	
+body {
+	//background-color: #cce0ff !important;
+	background-image: url("../images/bg.png") !important;
+	background-position:center;
+	background-repeat:no-repeat;
 }
 
-
 .jumbotron {
-    background-color: #e39f02;
-    color: #fff;
+	background: none;
+    color: teal;
     padding: 100px 25px;
 }
 
@@ -20,7 +15,7 @@ img {
     padding: 60px 50px;
 }
 
-td:hover { background: #d4d4d4; }
+td:hover { background: #cce0ff; }
 
 tr:hover { background: #c6cee3; }
 
@@ -31,7 +26,8 @@ hr {
 
 .navbar {
     margin-bottom: 0;
-    background-color: #ffb468 !important;
+    //background-color: #cce0ff !important;
+	background: none;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -44,5 +40,5 @@ hr {
 
 
 .navbar-default {
-    color: #ffb468 ;
+    color: #cce0ff ;
 }

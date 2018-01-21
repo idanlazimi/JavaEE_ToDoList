@@ -4,13 +4,13 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>TODO LIST</title>
+		<title>ToDoList Login</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="../css/ourcss.css">
  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</head>
-	<body>
+	<body background-image:url("../images/bg.png") !important;>
 	
 <nav class="navbar-default navbar navbar-fixed-top">
   <div class="collapse navbar-collapse">
@@ -41,12 +41,12 @@
 							</div>
 							
 							<div class="form-group">
-								<label>last name<input type="text" name="lastname" class="form-row form-control" placeholder="Last name" required autofocus ></label>
+								<label>Last name<input type="text" name="lastname" class="form-row form-control" placeholder="Last name" required autofocus ></label>
 							</div>
 							
 							
 							<div class="form-group">
-								<label>Mail<input type="text" name="mail" class="form-row form-control" placeholder="example@gamil.com" required autofocus ></label>
+								<label>E-mail<input type="text" name="mail" class="form-row form-control" placeholder="example@gamil.com" required autofocus ></label>
 							</div>
 							<div class="form-group">
 								<label>Password<input type="password" class="form-row form-control" name="pass" placeholder="Password" required></label>
@@ -66,16 +66,9 @@
 				}
 			%>	
 <div class="jumbotron text-center">
-  <h3 class="text-center">Contact Us</h3>
-  <p class="text-center"><em>Please feel free to contact us for Help or for anything else</em></p>
+  <h3 class="text-center">Feedback?</h3>
+  
   <div class="row test">
-    <div class="col-md-4">
-      <p>Need help? Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Ramt-Gan, SHENKAR, ISRAEL</p>
-      <p><span class="glyphicon glyphicon-phone"></span> Phone: +972 123567</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> Email: ToDolistHelp@gmail.com</p> 
-    </div>
-    <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
         <form action= "contact" method="POST">
@@ -89,7 +82,7 @@
       <div class="row">
       <br>
         <div class="col-md-12 form-group">
-          <button class="btn pull-right" name = "loginsend" type="submit">Send</button>
+          <button class="btn pull-right" name = "loginsend" type="submit">Launch</button>
         </div>
       </div>
       </form>
