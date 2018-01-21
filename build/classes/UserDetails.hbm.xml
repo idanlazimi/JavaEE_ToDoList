@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.shenkar.hibernate.model.User" table="USERS">
+		<id name="userID" type="int" column="user_id" >
+			<generator class="increment"/>	
+		 </id>
+		
+		<property name="password">
+			<column name="Password"/>
+		</property>
+		
+		<property name="firstname">
+			<column name="First_Name"/>
+		</property>
+		
+		<property name="lastname">
+			<column name="Last_Name"/>
+		</property>
+				
+		<property name="mail" unique = "true">
+				<column name="Email"/>
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>

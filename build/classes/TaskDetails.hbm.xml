@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.shenkar.hibernate.model.Task" table="todo_list">
+		<id name="taskID" type="int" column="Task_id" > 
+			<generator class="increment"/>	
+		</id>
+			
+		<property name="taskUserName">
+			<column name="Task_UserName"/>
+		</property>
+		
+		<property name="status">
+			<column name="Task_staus"/>
+		</property>
+		
+		<property name="title">
+			<column name="Task_Name"/>
+		</property>
+		
+		<property name="taskDescription">
+			<column name="Task_Description"/>
+		</property>
+		
+	</class>
+</hibernate-mapping>
