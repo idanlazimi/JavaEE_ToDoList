@@ -26,7 +26,7 @@ import com.shenkar.hibernate.model.UserExceptionHandler;
 
 @WebServlet("/usercontroller/*")
 public class ToDoProgramController extends HttpServlet {
-	//fuck fucker fukkkkkkkkkkk
+	//fuck face
 	private static final long serialVersionUID = 1L;
     private HttpSession session; 
     private RequestDispatcher dispatcher;
