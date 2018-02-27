@@ -47,7 +47,7 @@
 				<br>
 				All design rights go to whoever made this Bootstrap template. He was First on google.
 				<br><br><br><br>
-				<h3>Cheers, Shay Rubach & Idan Lazimi & Ran Shoshan.</h3>
+				<h3>Cheers, Shay Rubach & Idan Lazimi & Reut Leib.</h3>
 			</p>
 
 		</div>
