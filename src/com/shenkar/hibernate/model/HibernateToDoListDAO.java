@@ -92,7 +92,7 @@ public class HibernateToDoListDAO implements IToDoListDao{
 	 */
 	
 	@Override
-	public Contact addNewComment(Contact contact) throws ContactExceptionHandler{
+	public Contact addNewComment(Contact contact) throws ContactException{
 	Session session = contactFactory.openSession();
 		int id = 0;
 		try{
@@ -101,12 +101,12 @@ public class HibernateToDoListDAO implements IToDoListDao{
 			session.getTransaction().commit();
 		}catch (HibernateException e) {
 			if (session.getTransaction()!=null) session.getTransaction().rollback();
-				throw new ContactExceptionHandler("Unable to signup your comment,please try again"); 
+				throw new ContactException("Unable to signup your comment,please try again"); 
 		}finally {
 			try {
 				session.close();
 			} catch (HibernateException e){
-				throw new ContactExceptionHandler("Warnning!! connection did'nt close properly");
+				throw new ContactException("Warnning!! connection did'nt close properly");
 			} 
 		}
 		if (id != 0) {
