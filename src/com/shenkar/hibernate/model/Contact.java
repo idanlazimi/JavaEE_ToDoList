@@ -2,70 +2,76 @@ package com.shenkar.hibernate.model;
 
 import java.io.Serializable;
 
-public class Contact implements Serializable {
-	
-	/**
-	 * 
-	 */
+public class Contact implements Serializable
+{
+
 	private static final long serialVersionUID = 42L;
-	
+
 	private int contactID;
 	private String name;
 	private String email;
 	private String comment;
-	
 
 	/**
-	 * Constructor 
+	 * def Constructor
 	 */
-	public Contact() {}
+	public Contact()
+	{
+	}
 
-public int getContactID() {
+	public int getContactID()
+	{
 		return contactID;
 	}
 
-	public void setContactID(int contactID) {
+	public void setContactID(int contactID)
+	{
 		this.contactID = contactID;
 	}
 
-/**
- * Constructor
- * @param name
- * @param email
- * @param comment
- */
-	public Contact(String name, String email, String comment) {
+	/**
+	 * Constructor
+	 * 
+	 * @param name
+	 * @param email
+	 * @param comment
+	 */
+	public Contact(String name, String email, String comment)
+	{
 		super();
-		this.name = name;
+		this.comment = comment;
 		this.email = email;
+		this.name = name;
+	}
+
+	public String getName()
+	{
+		return name;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public String getEmail()
+	{
+		return email;
+	}
+
+	public void setEmail(String email)
+	{
+		this.email = email;
+	}
+
+	public String getComment()
+	{
+		return comment;
+	}
+
+	public void setComment(String comment)
+	{
 		this.comment = comment;
 	}
 
-public String getName() {
-	return name;
 }
-
-public void setName(String name) {
-	this.name = name;
-}
-
-public String getEmail() {
-	return email;
-}
-
-public void setEmail(String email) {
-	this.email = email;
-}
-
-public String getComment() {
-	return comment;
-}
-
-public void setComment(String comment) {
-	this.comment = comment;
-}
-	
-
-}
-
-
