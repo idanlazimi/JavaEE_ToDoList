@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.shenkar.hibernate.model.Contact;
-import com.shenkar.hibernate.model.ContactExceptionHandler;
+import com.shenkar.hibernate.model.ContactException;
 import com.shenkar.hibernate.model.HibernateToDoListDAO;
 import com.shenkar.hibernate.model.Task;
 import com.shenkar.hibernate.model.TaskExceptionHandler;
@@ -26,7 +26,7 @@ import com.shenkar.hibernate.model.UserExceptionHandler;
 
 @WebServlet("/usercontroller/*")
 public class ToDoProgramController extends HttpServlet {
-	//fuck fucker fukkkkkkkkkkkkkkkkk
+	//another test aaa
 	private static final long serialVersionUID = 1L;
     private HttpSession session; 
     private RequestDispatcher dispatcher;

@@ -8,7 +8,7 @@ import java.util.List;
  */
 public interface IToDoListDao {
 
-	public Contact addNewComment(Contact contact) throws ContactExceptionHandler;
+	public Contact addNewComment(Contact contact) throws ContactException;
 	
 	
 	/**
