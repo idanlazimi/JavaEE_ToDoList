@@ -100,7 +100,7 @@ public class ToDoProgramController extends HttpServlet {
 	 	} else if (url.endsWith("contact")) {
 	 		try {
 				tempURL = insertComment(request, response);
-			} catch (ContactExceptionHandler e) {
+			} catch (ContactException e) {
 				e.printStackTrace();
 			}
 	 	}
@@ -279,7 +279,7 @@ public class ToDoProgramController extends HttpServlet {
 		return tempURL;
 	}
 	
-	private String insertComment(HttpServletRequest request, HttpServletResponse response) throws ContactExceptionHandler {
+	private String insertComment(HttpServletRequest request, HttpServletResponse response) throws ContactException {
 		String tempURL=null;
 		String name = request.getParameter("loginname");
 		String mail = request.getParameter("loginemail");		
